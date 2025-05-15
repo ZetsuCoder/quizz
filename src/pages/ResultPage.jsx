@@ -22,7 +22,7 @@ const ResultsPage = () => {
 
   const questions = quizData[selectedCategory];
   const correctAnswers = userAnswers.filter(answer => answer.isCorrect).length;
-  const totalQuestions = questions.length;
+  const totalQuestions = 10;
   const score = Math.round((correctAnswers / totalQuestions) * 100);
 
  const handleRestart = () => {
