@@ -7,7 +7,22 @@ const HomePage = () => {
   const navigate = useNavigate();
   const { startQuiz } = useQuiz();
 
-  const categories = ["HTML", "CSS", "JavaScript", "React"];
+  const categories = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Node.Js",
+    "Express.js",
+    "MongoDB",
+    "PHP",
+    "Swift",
+    "Java",
+    "Flutter",
+    "Go",
+  ];
+
 
   const handleCategorySelect = (category) => {
     startQuiz(category);
@@ -25,7 +40,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-6xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -33,7 +48,7 @@ const HomePage = () => {
         className="text-center mb-12"
       >
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          Welcome to <span className="text-purple-600">QuizMaster</span>
+          Welcome to <span className="text-purple-600">ZetsuQuiz</span>
         </h1>
         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
           Test your knowledge in various web development topics. Select a
@@ -45,7 +60,7 @@ const HomePage = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="grid grid-cols-1 md:grid-cols-4 gap-6"
       >
         {categories.map((category) => (
           <CategoryCard
