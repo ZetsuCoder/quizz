@@ -1,7 +1,7 @@
 export const quizData = {
   HTML: [
     {
-      question: "What does HTML stand for",
+      question: "What does HTML stand for?",
       answers: [
         "Hyper Transfer Markup Language",
         "Hyper Text Markup Language",
