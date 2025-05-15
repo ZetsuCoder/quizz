@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import ProgressBar from "../components/ui/quizz/ProgressBar";
+import ProgressBar from "../components/ui/quiz/ProgressBar";
 import { useQuiz } from "../context/quizContext";
-import AnswerOption from "../components/ui/quizz/AnswerOptions";
+import AnswerOption from "../components/ui/quiz/AnswerOptions";
 
 const QuizPage = () => {
   const { category } = useParams();

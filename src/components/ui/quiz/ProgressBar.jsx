@@ -18,5 +18,4 @@ const ProgressBar = ({ current, total }) => {
     </div>
   );
 };
-
 export default ProgressBar;

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Home, RotateCcw } from 'lucide-react';
-import ResultItem from '../components/ui/quizz/ResultItem';
+import ResultItem from '../components/ui/quiz/ResultItem';
 import { useQuiz } from '../context/quizContext';
 import { quizData } from '../data/quizData';
 

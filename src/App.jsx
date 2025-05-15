@@ -3,7 +3,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import Layout from "./components/ui/quizz/Layout";
+import Layout from "./components/ui/quiz/Layout";
 import HomePage from "./pages/HomePage";
 import QuizPage from "./pages/QuizPage";
 import ResultsPage from "./pages/ResultPage";
